@@ -16,8 +16,10 @@ class App extends React.Component {
   render() {
     return (
 
-      <div className="container">        
+      <div className="container"> 
+      
         {this.state.burgers.map(burger => <Burger burger={burger} key={burger.id} /> )} 
+  
       </div>      
     );
   }
